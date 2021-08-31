@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head> <!-- fonte-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+    <title>RichText</title>
+  </head>
+<body>
+<div class="toolbar"> <!--listas com o botoes-->
+  <ul class="tool-list">
+    <li class="tool">
+      <button 
+         type="button"
+         data-command='justifyLeft'
+         class="tool--btn">
+        <i class=' fas fa-align-left'></i>
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command='justifyCenter'
+         class="tool--btn">
+        <i class=' fas fa-align-center'></i>
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command="bold"
+         class="tool--btn">
+        <i class=' fas fa-bold'></i> <!--funciona quando sublinha-->
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command="italic"
+         class="tool--btn">
+        <i class=' fas fa-italic'></i>
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command="underline"
+         class="tool--btn">
+        <i class=' fas fa-underline'></i>
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command="insertOrderedList"
+         class="tool--btn">
+        <i class=' fas fa-list-ol'></i>
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command="insertUnorderedList"
+         class="tool--btn">
+        <i class=' fas fa-list-ul'></i>
+      </button>
+    </li>
+    <li class="tool">
+      <button 
+         type="button"
+         data-command="createlink"
+         class="tool--btn">
+        <i class=' fas fa-link'></i>
+      </button>
+    </li>
+  </ul>
+</div>
+
+<div id="output" contenteditable="true"></div> <!--caixa onde escreve-->
+
+<script type="text/javascript" src="script.js"></script> <!--Javascript-->
+</body>
+</html>
